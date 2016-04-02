@@ -1,0 +1,214 @@
+Script started on Sat Apr  2 11:57:50 2016
+[?1034hbash-3.2$ g++ main.cpp
+bash-3.2$ ./a.out
+=================================================RULES=======================================================
+In the game of Letters, a player has four options on their turn.  They have 10 seconds to:
+
+1.Enter a specific letter. This letter is placed into a vector that is shown to the current player each turn.
+  Points are given based on the value of that letter to other players, divided by the number of times that that
+  letter is in the vector.
+
+2.Enter a word.  If a word is entered, it is checked against a file containing all of the words in Websters
+  English Dictionary. If the word is in the list, those letters are removed from the visible vector, and the 
+  word is added to an invisible vector that contains the used words. If the word is invalid (not in the list),
+  or previously used, the player is notified and their turn is over.
+
+3.Enter a random letter and guess a word.  The user can enter 'rand-word' where 'word' is a word
+  to try. A random letter is chosen for them, then the word is tried. No points are awarded for the letter,
+  but points will be awarded for a valid word.
+
+4.Remove a letter.  The player can enter 'remove-' followed by a letter in order to remove that letter
+  from the vector. This awards no points.
+
+The player can see these rules again by typing 'rules', or see the current scores by typing 'scores'.
+=============================================================================================================
+
+How many players?
+2
+What is the name of player 1?
+Ben
+What is the name of player 2?
+Chloe
+What will the winning score be? 
+100
+Letters in play:
+=======================================================
+
+
+
+=======================================================
+
+It's your turn Ben. Enter your input:
+b
+b is worth 7 point(s), and now appears 1 time(s) in the letters in play.
+Ben receives 7 points for a total of 7 points.
+
+Letters in play:
+=======================================================
+
+ b
+
+=======================================================
+
+It's your turn Chloe. Enter your input:
+t
+t is worth 25 point(s), and now appears 1 time(s) in the letters in play.
+Chloe receives 25 points for a total of 25 points.
+
+Letters in play:
+=======================================================
+
+ b t
+
+=======================================================
+
+It's your turn Ben. Enter your input:
+a
+a is worth 24 point(s), and now appears 1 time(s) in the letters in play.
+Ben receives 24 points for a total of 31 points.
+
+Letters in play:
+=======================================================
+
+ b t a
+
+=======================================================
+
+It's your turn Chloe. Enter your input:
+bat
+bat is worth 25 points.
+Chloe receives 25 points for a total of 50 points.
+
+Letters in play:
+=======================================================
+
+
+
+=======================================================
+
+It's your turn Ben. Enter your input:
+rand    g
+Sorry Ben. You took too long.
+Letters in play:
+=======================================================
+
+
+
+=======================================================
+
+It's your turn Chloe. Enter your input:
+remove-g
+g is not a letter currently in play.
+Letters in play:
+=======================================================
+
+
+
+=======================================================
+
+It's your turn Ben. Enter your input:
+g
+g is worth 10 point(s), and now appears 1 time(s) in the letters in play.
+Ben receives 10 points for a total of 41 points.
+
+Letters in play:
+=======================================================
+
+ g
+
+=======================================================
+
+It's your turn Chloe. Enter your input:
+remove-g
+Letters in play:
+=======================================================
+
+
+
+=======================================================
+
+It's your turn Ben. Enter your input:
+g
+g is worth 10 point(s), and now appears 1 time(s) in the letters in play.
+Ben receives 10 points for a total of 51 points.
+
+Letters in play:
+=======================================================
+
+ g
+
+=======================================================
+
+It's your turn Chloe. Enter your input:
+o
+o is worth 23 point(s), and now appears 1 time(s) in the letters in play.
+Chloe receives 23 points for a total of 73 points.
+
+Letters in play:
+=======================================================
+
+ g o
+
+=======================================================
+
+It's your turn Ben. Enter your input:
+rand-go
+go is worth 21 points.
+Ben receives 21 points for a total of 72 points.
+
+Letters in play:
+=======================================================
+
+ x
+
+=======================================================
+
+It's your turn Chloe. Enter your input:
+y
+y is worth 9 point(s), and now appears 1 time(s) in the letters in play.
+Chloe receives 9 points for a total of 82 points.
+
+Letters in play:
+=======================================================
+
+ x y
+
+=======================================================
+
+It's your turn Ben. Enter your input:
+l
+l is worth 16 point(s), and now appears 1 time(s) in the letters in play.
+Ben receives 16 points for a total of 88 points.
+
+Letters in play:
+=======================================================
+
+ x y l
+
+=======================================================
+
+It's your turn Chloe. Enter your input:
+o
+o is worth 23 point(s), and now appears 1 time(s) in the letters in play.
+Chloe receives 23 points for a total of 105 points.
+
+Congratulations Chloe!
+You won with a score of 105!
+NEW HIGH SCORE!
+
+ben 202
+Ben 131
+ben 115
+chloe 107
+chloe 105
+Chloe 105
+Chloe 104
+ben 24
+asd 10
+sdf 9
+
+Chloe is now rank 6 on the list of high scores!
+bash-3.2$ exit
+exit
+
+Script done on Sat Apr  2 11:59:08 2016
